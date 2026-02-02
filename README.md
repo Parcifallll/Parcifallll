@@ -20,8 +20,8 @@
   </picture>
 </p>
 
-## LeetCode stats:
-<p align="center">
+<!-- ## LeetCode stats:
+  <p align="center">
   <a href="https://leetcode.com/Parsifal_1111/">
     <img 
       src="https://leetcard.jacoblin.cool/Parsifal_1111?theme=catppuccinMocha&font=IBM%20Plex%20Mono&width=520&height=210" 
@@ -30,5 +30,5 @@
       height="210" 
     />
   </a>
-</p>
+</p> -->
 
