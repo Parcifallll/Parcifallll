@@ -2,7 +2,7 @@ name: Generate Snake Animation
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 */12 * * *'
   workflow_dispatch:
 
 jobs:
@@ -18,9 +18,8 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-              dist/github-snake.svg
-              dist/github-snake-dark.svg?palette=github-dark
-              dist/github-snake.gif?color_snake=#8b5cf6&color_dots=#f0f9ff,#bfdbfe,#93c5fd,#3b82f6,#1e40af&color_background=#1e1e2e
+            dist/github-snake-light.svg?color_snake=%239d5ce6&color_dots=%23d6def2,%23bfdbfe,%2393c5fd,%233b82f6,%231e40af&color_background=%23eef2fb
+            dist/github-snake-dark.svg?color_snake=%238b5cf6&color_dots=%23313244,%231e3a8a,%232563eb,%2360a5fa,%239cc9fd&color_background=%231e1e2e
 
       - name: Push changes
         uses: crazy-max/ghaction-github-pages@v4
